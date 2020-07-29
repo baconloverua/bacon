@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Mont';
+    src: local('Mont Regular'), local('Mont-Regular'),
+        url('Mont-Regular.woff2') format('woff2'),
+        url('Mont-Regular.woff') format('woff'),
+        url('Mont-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+ body {
+     background-color: #0A090A;
+     color: #fff;
+     font-family: 'Mont', sans-serif;
+     background-image: url('../img/banner.jpg');
+     background-repeat: no-repeat;
+     background-position: top center;
+ }
+ .container {    
+    max-width: 1196px;
+    margin: auto;
+}
+.header{
+   
+    display: flex;
+    /* выравнивает по центру по вертикали */
+    align-items: center;
+    justify-content: space-between;
+    /* внутринений отступ сверху  margin-top: 45px; */
+    padding-top: 15px;
+    /* margin-bottom: 30%;  */
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo-title{
+    
+    font-size: 23px;
+    line-height: 29px;
+    letter-spacing: -0.04em;
+    margin-left: 6%;
+
+}
+.logo-img{
+    width: 49px;
+    height: 49.9px;
+}
+.nav-item{
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    /* margin-right: 2%; */
+}
+.nav-menu-wrap{
+    flex: 0.7;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+}
+.nav-item:nth-child(2)::after{
+        content: '';
+        width: 8px;
+        height: 5px;
+        background-image: url(../img/Union.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+        margin-left: 15px;
+        
+}
+.nav-item:nth-child(3)::after{
+    content: '';
+        width: 8px;
+        height: 5px;
+        background-image: url(../img/Union.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+        margin-left: 15px;
+        
+}
+.banner{
+    display: flex;
+    align-items: center;
+}
+.polygon{
+    width: 740.09px;
+    height: 746.83px;
+}
+.left-banner{
+    width: 55%;
+}
+.main-title{
+    margin: 0;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 105px;
+    letter-spacing: -0.03em;
+}
+.main-subtitle{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    position: relative;
+    
+}
+.maint-text{
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: justify;
+}
+.main-button{
+    /* width: 194px;
+    height: 50px; */
+    font-size: 17px;
+    line-height: 22px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 14px 43px 19px 45px;
+    color: #FFFFFF;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-top: 13%;
+    
+}
+.right-banner{
+    width: 55%;
+}
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .nav-item{
+        font-size: 12px;
+    }
+}
+
+
+
